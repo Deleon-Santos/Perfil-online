@@ -1,21 +1,24 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#f5f5f0">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f5f0">
 
-<title>Deleon Santos | Desenvolvedor Full Stack</title>
+    <title>Deleon Santos | Desenvolvedor Full Stack</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-<link rel="stylesheet" href="./css/root.css">
-<link rel="stylesheet" href="./css/aside.css">
-<body  >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/aside.css">
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
     <div class="view flex-container">
         
         <aside class="aside-bar flex-container">
@@ -28,8 +31,9 @@
                     </div>
                     <div class="redes">
                         <ul class="flex-container">
-                            <li><a href=""><i class="fab fa-github"></i></a></li>
-                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://deleon-santos.github.io/PortifolioAtual/" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/deleon-santos-1b835a290/?isSelfProfile=true" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-file-arrow-down"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -37,105 +41,82 @@
                 <div class="nav-site">
                     <nav class="nav">
                         <ul>
-                            <li><a href="#home"><i class="fas fa-user"></i>Perfil</a></li>
-                            <li><a href="#escolaridade"><i class="fas fa-graduation-cap"></i>Escolaridade</a></li>
-                            <li><a href="#habilidades"><i class="fas fa-lightbulb"></i>Habilidades</a></li>
-                            <li><a href="#experiencia"><i class="fas fa-briefcase"></i>Experiência</a></li>
-                            
-                            <li><a href="#projetos"><i class="fas fa-briefcase"></i>Projetos</a></li>
+                            <li><a href="#home"><i class="fas fa-user" aria-hidden="true"></i>Perfil</a></li>
+                            <li><a href="#escolaridade"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Escolaridade</a></li>
+                            <li><a href="#habilidades"><i class="fas fa-lightbulb" aria-hidden="true"></i>Habilidades</a></li>
+                            <li><a href="#experiencia"><i class="fas fa-briefcase" aria-hidden="true"></i>Histórico Profissional</a></li>
+                            <li><a href="#projetos"><i class="fas fa-folder-open" aria-hidden="true"></i>Projetos</a></li>
+                            <li><a href="" class="theme-toggle" id="theme-toggle" >
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                                <span>Ativar tema escuro</span> </a></li>
                         </ul>
-                    </nav>
+                    </nav>                   
                 </div>
             </div>
             
             
-                <div class="contatos flex-container">
-                    <div class="contatos-map">
-                        <iframe
-                            src="https://www.google.com/maps?q=minor kobaiashi-78,Itapevi,SP,Brasil&output=embed"
-                            title="Localização em Itapevi - SP"
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            allowfullscreen>
-                        </iframe>
+            <div class="contatos flex-container">
+                <div class="contatos-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=minor kobaiashi-78,Itapevi,SP,Brasil&output=embed"
+                        title="Localização em Itapevi - SP"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
 
-                        <a
-                            href="https://www.google.com/maps/search/?api=1&query=Itapevi%2C+SP%2C+Brasil"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="mapa-link">
-                           
-                        </a>
-                    </div>
-
-                    <div class="contatos-info ">
-                        <p><span><i class="fas fa-map-marker-alt"></i></span>Itapevi-SP </p>
-                        <p> <span><i class="fas fa-phone"></i></span>+55 11 9.6122-0503</p>
-                        <p> <span><i class="fas fa-envelope"></i></span>delps.santos1987@gmail.com</p>
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Itapevi%2C+SP%2C+Brasil"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="mapa-link">
                         
-                    
-                    </div>
+                    </a>
                 </div>
-            
+
+                <div class="contatos-info ">
+                    <p><span><i class="fas fa-map-marker-alt"></i></span>Itapevi-SP </p>
+                    <p> <span><i class="fas fa-phone"></i></span>+55 11 9.6122-0503</p>
+                    <p> <span><i class="fas fa-envelope"></i></span>delps.santos1987@gmail.com</p>              
+                </div>
+            </div>          
         </aside>
 
 
         <main class="page">
-            <section class="section perfil flex-container">
-                <h2>Deleon da Paixão Santos</h2>
+            <section class="section perfil flex-container" id="home">
+                <h2><i class="fas fa-user"></i>Deleon da Paixão Santos</h2>
         
                 <p>Profissional experiente no varejo de alimentos, auxiliar adiministrativo e logística.</p>
             </section>
-            <section class="section escolaridade">
-                <h2>Formação Acadêmica</h2>
+            <section class="section escolaridade" id="escolaridade">
+                <h2><i class="fas fa-graduation-cap"></i>Formação Acadêmica</h2>
                 
                 <ul>
-                    <li><strong>Ensino Superior:</strong> Concluido com sucesso o (CST) <a href="">curso de Analise e Desenvolvimento de Sistemas</a> em 2025 com média final acima de 9.0.</li>
-                    <li><strong>Ensino Médio:</strong> Concluido o Ensino Médio em 2005 e tendo participação em atividades extracurriculares e Grêmio Estudantil.</li>
+                    <li><strong>Ensino Superior:</strong> Concluído com sucesso o (CST) <a href="">curso de Analise e Desenvolvimento de Sistemas</a> em 2025 com média final acima de 9.0.</li>
+                    <li><strong>Ensino Médio:</strong> Concluído o Ensino Médio em 2005 e tendo participação em atividades extracurriculares e Grêmio Estudantil.</li>
                 </ul>
-                <h3>Cursos de Capactação</h3>
-                <ul id="cursos">
-                    <li><strong>Fundamentos de Python I e II:</strong><a href="">Introdção a linguagem de programação Python</a> com foco em arquitetura, sitax, bibliotecas, depusração e integração com bancos de dados.</li>
-                    <li><strong>Fundamento de Ciencia de Dados:</strong><a href="">Introdção a analise e ciencia de dados</a> Visão geral e definição de dados, indormação, comecimento e desafios par a carreira de cientista de dados.</li>
-                    <li><strong>Segurançã da Informação:</strong> <a href="">Introção a seguranção da informação</a>com enfase em monitoramento de vulnerabilidades de rede, melhores práticas de segurança cibernética, privacidade e confidencialidade de dados, cibersegurança, detecção de ameaças.</li>
-                    <li><strong>Linux Essenssial I e II:</strong><a href="">Desmistifica o Linux,</a>> traz o entendimento do Carnel Linux e sua distribuições, navegação por linha de comando e recursos de segurança e todos os opicionais Open Source embarcados    </li>
-                    <li><strong>Excel:</strong>Curso de Excel do básico ao avançado:<a href="">Uma imersão pelo editor de planilha Excel explorando todos os recursos da ferramenta da Microsoft.</a></li>
-                    <li><strong>Escrita Fiscal:</strong><a href=""></a>O curso de Escrita Fiscal (ou escrituração fiscal) aborda o processo de registro, controle e apuração de todas as operações comerciais e tributárias de uma empresa, garantindo a conformidade com as exigências da legislação virgente. </li>
-                    <li><strong>HTML e CSS:</strong><a href="">Introdução à linguagem de marcação HTML e ao estilo CSS</a> com foco em estruturação semântica de páginas web e estilização visual em telas flexiveis.</li>
+                <h3>Cursos de Capacitação</h3>
+                <ul id="cursos" aria-live="polite">
                 </ul>
 
             </section>
-            <section class="section habilidades">
-                <h2>Habilidades</h2>
+            <section class="section habilidades" id="habilidades">
+                <h2><i class="fas fa-tools"></i>Habilidades</h2>
                 <p>Atendimento ao cliente - boas práticas de fabricação - manipulação e armazenamento de alimentos perecíveis - liderança - etiqueta ao telefone - informática(hardware, software, aplicações em nuvem, etc...) - sistemas ERP (sap, microsiga, protheus, Manhatan, etc.) - pacote office - escrituração fiscal (entrada, saída e recolhimento de tributos) - vendas (institucional e varejo ) - trabalho em equipe.</p>
             </section>
-            <section class="section experiencia">
-                <h2>Histórico Profissional</h2>
-                <ul id="experiencia">
-                    
-                    <li><strong>Daisan(Correias Rexon)</strong><br>Separador III: Responsavel pela separação e conferencia de pedidos, organiçãoção e contagem de estoque.</li>
-                    <li><strong>Mottus(C&A)</strong><br>Conferente: responsavel pela conferencia via coletor, paletização, armazenamento e inventario.</li>
-                    <li><strong>MRS(Supermercados Dia)</strong><br>Atendente SR: Responsavel pelo atendimento no setor de pereciveis, manipulação de produtos perecivel e controle de estoque.</li>
-                    <li><strong>Virtus(stMarche)</strong> <br> Operador Sr: Conferente Sr Responsavel pela conferencia de entrada e saida de mercadoria, recebimento e emissão de nota fiscal, prevenção de perdas, logistica reversa, inventario interno, organização e compra de insumos.</li>
-                    <li><strong>Supermercados Bem Melhor</strong> <p>Repositor: Repositor de produtos pereciveis, resposavel pela manipulação de produtos fracionados, organização, precificação e inventario do setor. </p></li>
-                    <li><strong>L. Fereczi(Aveia Ferla)</strong><p>Auxiliar Administrativo Comercial: Auxiliar de vendas institucional, integração de pedidos de vendas, venda direta, apoio logistico e faturamento. </p></li>
-                    <li><strong>Supermercado Santos Luz(Parana Supernmercados)</strong><p>Auxiliar Administrativo: Responsavel pelo recebimento fiscal, faturamento, conferencia de romaneios, inventarios e CPD.</p></li>
+            <section class="section experiencia" id="experiencia">
+                <h2><i class="fas fa-briefcase"></i>Histórico Profissional</h2>
+                <ul id="experiencias" aria-live="polite">
                 </ul>
             </section>
             
-            <section class="section projetos">
-                <h2>Projetos</h2>
-                <p>Tenho experiência em desenvolvimento web, análise de sistemas e suporte técnico, 
+            <section class="section projetos" id="projetos">
+                <h2><i class="fas fa-laptop-code"></i>Projetos</h2>
+                <p>Tenho experiência em desenvolvimento web, integração de sistemas e suporte técnico, 
                 possuo habilidades em diversas linguagens de programação, frameworks, ferramentas de desenvolvimento e IA. 
                 Sou proativo, comprometido e continuo me atualizando para atender as demandos do mercado.</p>
-                <ul id="projetos">
-                    <li><strong>Projeto 1:</strong> <a href="">Sistema de Gerenciamento de Tarefas</a> - Um aplicativo web para organizar e acompanhar tarefas, com funcionalidades de criação, edição e exclusão de tarefas, além de categorização e priorização.</li>
-                    <li><strong>Projeto 2:</strong> <a href="">Sistema de Gerenciamento de Tarefas</a> - Um aplicativo web para organizar e acompanhar tarefas, com funcionalidades de criação, edição e exclusão de tarefas, além de categorização e priorização.</li>
-                    <li><strong>Projeto 3:</strong> <a href="">Sistema de Gerenciamento de Tarefas</a> - Um aplicativo web para organizar e acompanhar tarefas, com funcionalidades de criação, edição e exclusão de tarefas, além de categorização e priorização.</li>
-                    <li><strong>Projeto 4:</strong> <a href="">Sistema de Gerenciamento de Tarefas</a> - Um aplicativo web para organizar e acompanhar tarefas, com funcionalidades de criação, edição e exclusão de tarefas, além de categorização e priorização.</li>
-                    <li><strong>Projeto 5:</strong> <a href="">Sistema de Gerenciamento de Tarefas</a> - Um aplicativo web para organizar e acompanhar tarefas, com funcionalidades de criação, edição e exclusão de tarefas, além de categorização e priorização.</li>
-                    <li><strong>Projeto 6:</strong> <a href="">Sistema de Gerenciamento de Tarefas</a> - Um aplicativo web para organizar e acompanhar tarefas, com funcionalidades de criação, edição e exclusão de tarefas, além de categorização e priorização.</li>
-
+                <ul id="lista-projetos" aria-live="polite">
                 </ul>
             </section>
         

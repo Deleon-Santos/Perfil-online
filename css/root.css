@@ -1,6 +1,6 @@
 
 :root {
-    color-scheme: light dark;
+    color-scheme: light;
 
     --cor-fundo: #f5f5f0;
     --cor-superficie: #fefbfb;
@@ -15,7 +15,7 @@
 
     --cor-sombra: rgb(45 55 45 / 7%);
 
-    --fonte-principal: "Inter", "Segoe UI", sans-serif;
+    --fonte-principal: monospace, sans-serif;
 
     --raio-pequeno: 8px;
     --raio-medio: 10px;
@@ -25,7 +25,9 @@
 
     --transicao: 0.25s ease;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 *{
   box-sizing: border-box;
   margin: 0;
@@ -33,7 +35,7 @@
 }
 
 body{
-  
+
   min-height: 100vh;
   display: flex;
   align-items:flex-start;
@@ -46,24 +48,18 @@ body{
 .flex-container {
   display: flex;
   flex-direction: column;
+  margin: 0;
   
   
   
   
 }
-.view {
-  
-  max-width: 900px;
-  
-  
-  width: 100%;
-  
-}
+
 .page {
   overflow-y: auto;
   height: 100vh;
-  
-  margin-left: 20px; /* Adjust this value based on the width of your aside-bar */
+  border-radius: 15px;
+   /* Adjust this value based on the width of your aside-bar */
 }
 
 ul {
@@ -97,23 +93,21 @@ ul li a {
    2. TEMA ESCURO AUTOMÁTICO
 ========================================= */
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: dark;
+:root[data-theme="dark"] {
+    color-scheme: dark;
 
-        --cor-fundo: #202622;
-        --cor-superficie: #29312b;
-        --cor-superficie-hover: #333e35;
+    --cor-fundo: #202622;
+    --cor-superficie: #29312b;
+    --cor-superficie-hover: #333e35;
 
-        --cor-primaria: #a9c1ac;
-        --cor-primaria-hover: #c5d7c7;
+    --cor-primaria: #a9c1ac;
+    --cor-primaria-hover: #c5d7c7;
 
-        --cor-texto: #e5e9e4;
-        --cor-texto-secundario: #b0b9b0;
-        --cor-borda: #3d4840;
+    --cor-texto: #e5e9e4;
+    --cor-texto-secundario: #b0b9b0;
+    --cor-borda: #3d4840;
 
-        --cor-sombra: rgb(0 0 0 / 18%);
-    }
+    --cor-sombra: rgb(0 0 0 / 18%);
 }
 
 /* =========================================
@@ -195,7 +189,7 @@ h3 {
 .view {
     display: grid;
     grid-template-columns: 270px minmax(0, 1fr);
-    gap: var(--espacamento);
+    gap: 35px;
 
     width: 100%;
     max-width: 1440px;
@@ -205,7 +199,7 @@ h3 {
 
 .aside-bar {
     position: sticky;
-    top: 24px;
+   
 
     display: flex;
     flex-direction: column;
@@ -300,7 +294,7 @@ h3 {
     padding: 5px 12px;
 
     color: var(--cor-texto-secundario);
-    border-radius: var(--raio-pequeno);
+    
 
     transition:
         background-color var(--transicao),
@@ -308,7 +302,8 @@ h3 {
 }
 
 .nav a:hover,
-.nav a:focus-visible {
+.nav a:focus-visible,
+.nav a[aria-current="location"] {
     color: var(--cor-texto);
     background: var(--cor-superficie-hover);
 }
@@ -316,7 +311,7 @@ h3 {
 .nav a i {
     width: 25px;
     text-align: center;
-    color: #040404;
+    color: var(--cor-primaria);
 }
 
 /* =========================================
@@ -419,8 +414,8 @@ h3 {
     min-height: 300px;
     overflow: hidden;
 
-    border-radius: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    border: 1px solid var(--cor-borda);
 
     
 
@@ -458,8 +453,8 @@ h3 {
     padding: 12px 16px;
     border-radius: 10px;
 
-    background: rgba(20, 20, 30, 0.9);
-    color: #fff;
+    background:transparent;
+    color:var(--cor-texto);
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
@@ -472,7 +467,7 @@ h3 {
 }
 
 .mapa-link:hover {
-    background: #2563eb;
+    background:var(--cor-texto);
     transform: scale(1.04);
 }
 
@@ -498,7 +493,7 @@ h3 {
     padding: 3px;
     text-align: center;
     flex-shrink: 0;
-    color: #60a5fa;
+    color:var(--cor-texto-secundario);
     font-size: .8rem;
     width: 25px;
     text-align: center;
@@ -588,5 +583,37 @@ h3 {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
     }
-}
 
+    .theme-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 12px;
+        padding: 10px 12px;
+        color: var(--cor-texto);
+        font: inherit;
+        text-align: left;
+        background: var(--cor-superficie-hover);
+        border: 1px solid var(--cor-borda);
+        border-radius: var(--raio-pequeno);
+        cursor: pointer;
+        transition:
+            background-color var(--transicao),
+            color var(--transicao);
+    }
+
+    .theme-toggle:hover {
+        background: var(--cor-borda);
+    }
+
+    .theme-toggle i {
+        width: 20px;
+        padding: 0;
+    }
+
+    .nav a[aria-current="location"] {
+        font-weight: 700;
+    }
+}

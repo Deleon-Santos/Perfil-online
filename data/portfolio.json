@@ -1,0 +1,99 @@
+{
+  "cursos": [
+    {
+      "title": "Fundamentos de Python I e II",
+      "description": "Introdução e aprofundamento na linguagem de programação Python, com foco em sintaxe, estruturas de dados, lógica de programação, funções, modularização e programação orientada a objetos. Desenvolvimento de habilidades em depuração de código, identificação e tratamento de erros, utilização de bibliotecas e resolução de problemas. Compreensão dos fundamentos de arquitetura de software e integração com bancos de dados, fortalecendo a capacidade de desenvolver soluções organizadas, eficientes e de fácil manutenção."
+    },
+    {
+      "title": "HTML e CSS",
+      "description": "Fundamentos do desenvolvimento web com HTML e CSS, com foco na estruturação semântica de páginas, organização de elementos e aplicação de estilos para construção de interfaces modernas e responsivas. Desenvolvimento de habilidades na criação de layouts flexíveis, utilização de seletores, cores, tipografia, espaçamentos e técnicas de responsividade para adaptar páginas a diferentes dispositivos e tamanhos de tela, priorizando a acessibilidade, a organização e a experiência do usuário."
+    },
+    {
+      "title": "Fundamentos de Ciência de Dados",
+      "description": "Introdução aos fundamentos da Análise e Ciência de Dados, com foco na compreensão dos conceitos de dados, informação e conhecimento, e em como esses elementos contribuem para a tomada de decisões. Desenvolvimento de uma visão analítica sobre a importância da coleta, organização, interpretação e utilização estratégica dos dados, além do conhecimento dos principais desafios, competências e responsabilidades da carreira de cientista de dados."
+    },
+    {
+      "title": "Segurança da Informação",
+      "description": "Introdução aos fundamentos de Segurança da Informação, com foco na identificação e no monitoramento de vulnerabilidades em redes, aplicação de boas práticas de segurança cibernética e proteção de dados. Compreensão dos princípios de confidencialidade, integridade e disponibilidade da informação, além de conceitos de privacidade, identificação de ameaças e prevenção de riscos digitais."
+    },
+    {
+      "title": "Linux Essencial I e II",
+      "description": "Introdução aos fundamentos do sistema operacional Linux, com foco na compreensão do funcionamento do kernel, das principais distribuições e da filosofia do software de código aberto (Open Source). Desenvolvimento de habilidades na utilização do terminal, navegação pelo sistema de arquivos, execução de comandos e gerenciamento básico de arquivos e diretórios. Conhecimento dos recursos de segurança, permissões de acesso e boas práticas para administração e utilização do ambiente Linux."
+    },
+    {
+      "title": "Excel",
+      "description": "Capacitação no Microsoft Excel, abrangendo desde os fundamentos até recursos avançados para organização, análise e apresentação de dados. Desenvolvimento de habilidades na criação e formatação de planilhas, utilização de fórmulas e funções, aplicação de filtros e classificação de informações, construção de gráficos e utilização de ferramentas para otimizar tarefas e aumentar a produtividade. Aprimoramento da capacidade de estruturar dados e gerar informações úteis para o acompanhamento de atividades e a tomada de decisões."
+    },
+    {
+      "title": "Escrita Fiscal",
+      "description": "Entendimento dos processos de registro, controle e apuração de operações comerciais e tributárias, com foco na organização de documentos, conferência de informações e compreensão das obrigações fiscais. Desenvolvimento de conhecimentos sobre rotinas administrativas e contábeis, controle de operações comerciais e importância do cumprimento da legislação tributária vigente, contribuindo para a precisão dos registros e a conformidade das atividades empresariais."
+    }
+  ],
+  "experiencias": [
+    {
+      "title": "Daisan (Correias Rexon)",
+      "role": "Separador III",
+      "description": "Separação e conferência de pedidos, organização e contagem de estoque."
+    },
+    {
+      "title": "Mottus (C&A)",
+      "role": "Conferente",
+      "description": "Conferência com coletor, paletização, armazenamento e inventário."
+    },
+    {
+      "title": "MRS (Supermercados Dia)",
+      "role": "Atendente SR",
+      "description": "Atendimento no setor de perecíveis, manipulação de produtos e controle de estoque."
+    },
+    {
+      "title": "Virtus (St. Marche)",
+      "role": "Operador Sr / Conferente Sr",
+      "description": "Conferência de entrada e saída de mercadorias, recebimento e emissão de notas fiscais, prevenção de perdas, logística reversa, inventário, organização e compra de insumos."
+    },
+    {
+      "title": "Supermercados Bem Melhor",
+      "role": "Repositor",
+      "description": "Reposição de produtos perecíveis, manipulação de produtos fracionados, organização, precificação e inventário do setor."
+    },
+    {
+      "title": "L. Fereczi (Aveia Ferla)",
+      "role": "Auxiliar Administrativo Comercial",
+      "description": "Apoio a vendas institucionais, integração de pedidos, venda direta, apoio logístico e faturamento."
+    },
+    {
+      "title": "Supermercado Santos Luz (Paraná Supermercados)",
+      "role": "Auxiliar Administrativo",
+      "description": "Recebimento fiscal, faturamento, conferência de romaneios, inventários e CPD."
+    }
+  ],
+  "projetos": [
+    {
+      "title": "CheckList Ocorrências",
+      "description": "**Sistema web para gerenciamento de ocorrências**, desenvolvido com JavaScript moderno (ES Modules), HTML5 e CSS3. Possui interface intuitiva, responsiva e dinâmica, proporcionando uma experiência de navegação eficiente. Implementa autenticação baseada em tokens JWT e integração com API REST para comunicação segura e gerenciamento de dados. "
+    },
+    {
+      "title": "Gestão Comandas",
+      "description": "**Sistema de gerenciamento de mesas e comandas**, desenvolvido para lanchonetes, bares e estabelecimentos similares. A solução permite gerenciar produtos, controlar pedidos e acompanhar comandas até a finalização do pagamento. Desenvolvido com Python, Streamlit e SQLAlchemy, utiliza PostgreSQL hospedado no Render para garantir a persistência dos dados e a disponibilidade das informações."
+    },
+    {
+      "title": "Library",
+      "description": "**Aplicação Full Stack para pesquisa e gerenciamento de Titulo**, desenvolvida com frontend web e backend em Python utilizando Flask. A solução permite consultar e organizar livros, além de consumir dados de APIs externas para ampliar as informações disponíveis. O frontend está hospedado no GitHub Pages, enquanto o backend e a infraestrutura de banco de dados utilizam Render e Supabase. Devido às limitações de disponibilidade da hospedagem, o primeiro acesso pode levar alguns segundos para carregar."
+    },
+    {
+      "title": "XML to XLSX",
+      "description": "**Extrator de dados de xml** desenvolvido em Python e interface Streamlit. O sistema e capaz de extrair informações de multiplos arquivos XML de NF-e retoarna em planilhas Excel (.xlsx). Ideal para auditorias, conferências e análises de dados e esta disponivel para teste via Browser."
+    },
+    {
+      "title": "API-CheckList Ocorrência",
+      "description": "**API REST com Docker para gerenciamento de ocorrências**, desenvolvida em Python com Flask. Possui operações CRUD, arquitetura modular, controle de acesso, autenticação JWT e proteção de senhas com Bcrypt. Utiliza ORM para integração com banco de dados PostgreSQL hospedado no Supabase, a  API hospedada no Render e tem documentação Swagger."
+    },
+    {
+      "title": "Sales-PDV — Frente de Caixa",
+      "description": "**Sistema de PDV para vendas no varejo**, desenvolvido com HTML5, CSS3 e JavaScript moderno (ES Modules). Possui interface intuitiva, integração com API REST e arquitetura modular e escalável, facilitando a manutenção e a evolução do sistema. Oferece praticidade e agilidade no gerenciamento de produtos e operações de venda."
+    },
+    {
+      "title": "Sales-PDV — BackEnd",
+      "description": "**Backend para sistema de PDV varejista**, desenvolvido com Django seguindo boas práticas de PEP 8, Clean Code, SOLID e segurança. Possui autenticação JWT, controle de acesso por perfil, gerenciamento de usuários, produtos, vendas e itens, controle de estoque, relatórios por período e geração de cupons em PDF. Utiliza SQLite no ambiente de desenvolvimento e Postgres hospedado no SupaBase."
+    }
+  ]
+}
