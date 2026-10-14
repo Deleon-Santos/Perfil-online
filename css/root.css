@@ -550,6 +550,8 @@ section p, li{text-align: justify;}
         max-height: none;
         overflow: visible;
         padding: 20px;
+        opacity: 0;
+        z-index: 1000;
     }
 
     .aside-bar-topo {
