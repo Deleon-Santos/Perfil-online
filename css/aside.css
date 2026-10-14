@@ -1,24 +1,12 @@
-.aside-bar{
-    width: 300px;
-    min-height: 0;
-    max-width: 100%;
-    gap: 20px;
-    overflow-y: auto;     
-    
-}
+
 h1{
     text-align: center;
+    font-family:'Courier New', Courier, monospace;
 }
 .menu-navegacao, .aside-bar-topo, .img{
     gap: 20px;
 }
-img{
-    margin: auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 25%;
-    
-}
+
 .redes{
     gap:20px;
 }
@@ -71,3 +59,4 @@ img{
 ::-webkit-scrollbar-corner {
     background: transparent;
 }
+
