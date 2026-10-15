@@ -51,11 +51,7 @@ body{
   margin: 0; 
 }
 
-.page {
-  overflow-y: auto;
-  height: 100vh;
-  border-radius: 15px;
-}
+
 
 ul {
   list-style: none;
@@ -207,6 +203,8 @@ h3 {
     border: 1px solid var(--cor-borda);
     border-radius: var(--raio-grande);
     box-shadow: 0 8px 28px var(--cor-sombra);
+    overflow-y: auto;
+    height: 100vh;
     
 }
 
