@@ -7,6 +7,52 @@ const THEME_COLORS = {
 const themeToggle = document.querySelector("#theme-toggle");
 const themeColorMeta = document.querySelector('meta[name="theme-color"]');
 const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+const mobileMenuQuery = window.matchMedia("(max-width: 680px)");
+const menuToggle = document.querySelector(".menu-toggle");
+const siteSidebar = document.querySelector("#site-sidebar");
+const pageView = document.querySelector(".view");
+
+function setMobileMenuOpen(isOpen) {
+    siteSidebar.classList.toggle("is-open", isOpen);
+    pageView.classList.toggle("menu-open", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen
+        ? "Fechar menu de navegação"
+        : "Abrir menu de navegação");
+    menuToggle.querySelector("i").className = `fas ${isOpen ? "fa-xmark" : "fa-bars"}`;
+}
+
+menuToggle.addEventListener("click", () => {
+    setMobileMenuOpen(menuToggle.getAttribute("aria-expanded") !== "true");
+});
+
+document.addEventListener("click", (event) => {
+    if (
+        mobileMenuQuery.matches &&
+        menuToggle.getAttribute("aria-expanded") === "true" &&
+        !siteSidebar.contains(event.target) &&
+        !menuToggle.contains(event.target)
+    ) {
+        setMobileMenuOpen(false);
+    }
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
+        setMobileMenuOpen(false);
+        menuToggle.focus();
+    }
+});
+
+siteSidebar.querySelectorAll(".nav a[href^='#']").forEach((link) => {
+    link.addEventListener("click", () => setMobileMenuOpen(false));
+});
+
+mobileMenuQuery.addEventListener("change", (event) => {
+    if (!event.matches) {
+        setMobileMenuOpen(false);
+    }
+});
 
 function readSavedTheme() {
     try {

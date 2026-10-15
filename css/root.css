@@ -28,6 +28,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -35,7 +36,6 @@ html{
 }
 
 body{
-
   min-height: 100vh;
   display: flex;
   align-items:flex-start;
@@ -48,18 +48,13 @@ body{
 .flex-container {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  
-  
-  
-  
+  margin: 0; 
 }
 
 .page {
   overflow-y: auto;
   height: 100vh;
   border-radius: 15px;
-   /* Adjust this value based on the width of your aside-bar */
 }
 
 ul {
@@ -67,10 +62,7 @@ ul {
   
 }
 
-
 ul li a {
-  
-  
   text-decoration: none;
   color: var(--text-color);
   cursor: pointer;
@@ -83,15 +75,6 @@ ul li a {
   justify-content: center;
   padding: 10px;
 }
-
-/* =========================================
-   1. TEMA CLARO: PALETA PASTEL
-========================================= */
-
-
-/* =========================================
-   2. TEMA ESCURO AUTOMÁTICO
-========================================= */
 
 :root[data-theme="dark"] {
     color-scheme: dark;
@@ -110,10 +93,6 @@ ul li a {
     --cor-sombra: rgb(0 0 0 / 18%);
 }
 
-/* =========================================
-   3. RESET E CONFIGURAÇÕES GERAIS
-========================================= */
-
 *,
 *::before,
 *::after {
@@ -129,13 +108,10 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0 38px ;
-
     background: var(--cor-fundo);
     color: var(--cor-texto);
-
     font-family: var(--fonte-principal);
     line-height: 1.7;
-
     transition:
         background-color var(--transicao),
         color var(--transicao);
@@ -182,15 +158,10 @@ h3 {
     color: var(--cor-texto);
 }
 
-/* =========================================
-   4. ESTRUTURA PRINCIPAL
-========================================= */
-
 .view {
     display: grid;
     grid-template-columns: 270px minmax(0, 1fr);
     gap: 35px;
-
     width: 100%;
     max-width: 1440px;
     margin-inline: auto;
@@ -199,23 +170,20 @@ h3 {
 
 .aside-bar {
     position: sticky;
-   
-
     display: flex;
     flex-direction: column;
     gap: 20px;
-
     min-width: 0;
     max-height: calc(100vh - 1px);
     overflow-y: auto;
-
-    padding: 20px 0;
-
-    
+    padding: 20px 0;    
     border: 1px solid var(--cor-borda);
     border-radius: var(--raio-grande);
-
     box-shadow: 0 8px 28px var(--cor-sombra);
+}
+
+.menu-toggle {
+    display: none;
 }
 
 .page {
@@ -224,23 +192,15 @@ h3 {
     flex-direction: column;
     border: 1px solid var(--cor-borda);
     border-radius: var(--raio-grande);
-
     box-shadow: 0 8px 28px var(--cor-sombra);
     
 }
 
-/* =========================================
-   5. SEÇÕES DE CONTEÚDO
-========================================= */
-
 .section {
-    padding: clamp(22px, 4vw, 20px);
-    
+    padding: clamp(22px, 4vw, 20px);   
     background: var(--cor-superficie);
     padding-bottom: 0px;
-
     box-shadow: 0 6px 22px var(--cor-sombra);
-
     scroll-margin-top: 24px;
 }
 
@@ -260,11 +220,9 @@ section p, li{text-align: justify;}
 .section h2::after {
     content: "";
     display: block;
-
     width: 42px;
     height: 3px;
     margin-top: 12px;
-
     background: var(--cor-primaria);
     border-radius: 99px;
 }
@@ -288,22 +246,12 @@ section p, li{text-align: justify;}
     color: var(--cor-texto);
 }
 
-/* =========================================
-   6. NAVEGAÇÃO
-========================================= */
-
-
-
 .nav a {
     display: flex;
     align-items: center;
     gap: 15px;
-
     padding: 5px 12px;
-
     color: var(--cor-texto-secundario);
-    
-
     transition:
         background-color var(--transicao),
         color var(--transicao);
@@ -322,10 +270,6 @@ section p, li{text-align: justify;}
     color: var(--cor-primaria);
 }
 
-/* =========================================
-   7. FOTO E REDES SOCIAIS
-========================================= */
-
 .img {
     display: flex;
     flex-direction: column;
@@ -343,7 +287,6 @@ section p, li{text-align: justify;}
     width: 136px;
     aspect-ratio: 1;
     object-fit: cover;
-
     border: 4px solid var(--cor-superficie-hover);
     border-radius: 50%;
 }
@@ -357,14 +300,11 @@ section p, li{text-align: justify;}
 .redes a {
     display: grid;
     place-items: center;
-
     width: 42px;
     height: 42px;
-
     color: var(--cor-texto);
     background: var(--cor-superficie-hover);
     border-radius: 50%;
-
     transition:
         transform var(--transicao),
         background-color var(--transicao);
@@ -378,10 +318,6 @@ section p, li{text-align: justify;}
 .redes i {
     width: auto;
 }
-
-/* =========================================
-   8. CONTATOS
-========================================= */
 
 .contatos-info {
     display: grid;
@@ -404,8 +340,6 @@ section p, li{text-align: justify;}
     color: var(--cor-primaria);
 }
 
-
-/* Container principal */
 .contatos {
     padding: 0 20px;
     gap: 25px;
@@ -416,17 +350,12 @@ section p, li{text-align: justify;}
     margin: 0 auto;
 }
 
-/* Área do mapa */
 .contatos-map {
     position: relative;
     min-height: 150px;
     overflow: hidden;
-
     border-radius: 10px;
     border: 1px solid var(--cor-borda);
-
-    
-
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
@@ -437,38 +366,30 @@ section p, li{text-align: justify;}
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Mapa incorporado */
 .contatos-map iframe {
     display: block;
     width: 100%;
     height: 100%;
     min-height: 150px;
-
     border: none;
     filter: grayscale(25%);
 }
 
-/* Botão sobre o mapa */
 .mapa-link {
     position: absolute;
     left: 15px;
     bottom: 15px;
-
     display: inline-flex;
     align-items: center;
     gap: 8px;
-
     padding: 12px 16px;
     border-radius: 10px;
-
     background:transparent;
     color:var(--cor-texto);
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
-
     backdrop-filter: blur(8px);
-
     transition:
         background 0.3s ease,
         transform 0.3s ease;
@@ -479,22 +400,12 @@ section p, li{text-align: justify;}
     transform: scale(1.04);
 }
 
-
-
-
-/* Informações de contato */
-
-
-
 .contatos-info p {
     display: flex;
     align-items: center;
-
     font-size: .8rem;
     margin: 0;
     overflow-wrap: anywhere;
-
-
 }
 
 .contatos-info p i {
@@ -511,10 +422,6 @@ section p, li{text-align: justify;}
 }
 
 
-
-/* =========================================
-   9. RESPONSIVIDADE
-========================================= */
 
 @media (max-width: 900px) {
     body {
@@ -545,13 +452,62 @@ section p, li{text-align: justify;}
         gap: 16px;
     }
 
-    .aside-bar {
-        position: static;
-        max-height: none;
-        overflow: visible;
-        padding: 20px;
-        opacity: 0;
+    .menu-toggle {
+        position: fixed;
+        top: 48px;
+        right: 25px;
         z-index: 1000;
+        display: grid;
+        place-items: center;
+        width: 46px;
+        height: 46px;
+        color: var(--cor-texto);
+        background: var(--cor-superficie);
+        border: 1px solid var(--cor-borda);
+        border-radius: var(--raio-pequeno);
+        box-shadow: 0 4px 16px var(--cor-sombra);
+        cursor: pointer;
+    }
+
+    .menu-toggle i {
+        width: auto;
+        padding: 0;
+    }
+
+    .view.menu-open::before {
+        position: fixed;
+        inset: 0;
+        z-index: 998;
+        background: rgb(0 0 0 / 35%);
+        content: "";
+    }
+ 
+    .aside-bar {
+        position: fixed;
+        inset: 36px 12px 12px auto;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        width: min(360px, calc(100vw - 24px));
+        max-height: calc(100vh - 18px);
+        overflow-y: auto;
+        padding: 20px;
+        background: var(--cor-superficie);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(20px);
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease,
+            visibility 0.3s ease;
+    }
+
+    .aside-bar.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0);
     }
 
     .aside-bar-topo {
@@ -568,6 +524,8 @@ section p, li{text-align: justify;}
 
     .page {
         gap: 16px;
+        overflow: hidden;
+        height: auto;
     }
 
     .section {
@@ -581,8 +539,6 @@ section p, li{text-align: justify;}
         grid-template-columns: minmax(0, 1fr);
     }
 }
-
-/* Respeita a preferência por menos animações. */
 
 @media (prefers-reduced-motion: reduce) {
     *,
